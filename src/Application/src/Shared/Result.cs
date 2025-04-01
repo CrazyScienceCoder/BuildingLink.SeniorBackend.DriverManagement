@@ -13,7 +13,7 @@ public abstract class Result<TData, TResponse> where TResponse : Result<TData, T
 
     public Exception? Error { get; private init; }
 
-    public ErrorType? ErrorType { get; set; }
+    public ErrorType? ErrorType { get; private init; }
 
     public static TResponse Success(TData? data = default, string message = DefaultSuccessMessage)
     {
