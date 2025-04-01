@@ -1,6 +1,6 @@
 ﻿namespace BuildingLink.DriverManagement.WebApi.Features.Drivers.Update;
 
-public class UpdateDriverRequest
+public sealed class UpdateDriverRequest
 {
     public string FirstName { get; set; } = null!;
 

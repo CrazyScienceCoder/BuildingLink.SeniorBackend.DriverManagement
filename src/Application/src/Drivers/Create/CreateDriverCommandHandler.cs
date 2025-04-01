@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 
 namespace BuildingLink.DriverManagement.Application.Drivers.Create;
 
-public class CreateDriverCommandHandler(IDriverRepository driverRepository, ILogger<CreateDriverCommandHandler> logger)
+public sealed class CreateDriverCommandHandler(IDriverRepository driverRepository, ILogger<CreateDriverCommandHandler> logger)
     : HandlerBase<CreateDriverCommand, CreateDriverCommandResponse, DriverResult, Driver>(driverRepository, logger)
 {
     protected override async Task<CreateDriverCommandResponse> ExecuteAsync(CreateDriverCommand request, CancellationToken cancellationToken)

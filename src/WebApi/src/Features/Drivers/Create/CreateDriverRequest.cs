@@ -1,6 +1,6 @@
 ﻿namespace BuildingLink.DriverManagement.WebApi.Features.Drivers.Create;
 
-public class CreateDriverRequest
+public sealed class CreateDriverRequest
 {
     public string FirstName { get; set; } = null!;
 

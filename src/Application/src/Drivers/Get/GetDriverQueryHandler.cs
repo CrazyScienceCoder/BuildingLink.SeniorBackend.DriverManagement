@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace BuildingLink.DriverManagement.Application.Drivers.Get;
 
-public class GetDriverQueryHandler(IDriverRepository driverRepository, ILogger<GetDriverQueryHandler> logger)
+public sealed class GetDriverQueryHandler(IDriverRepository driverRepository, ILogger<GetDriverQueryHandler> logger)
     : HandlerBase<GetDriverQuery, GetDriverQueryResponse, DriverResult, Driver>(driverRepository, logger)
 {
     protected override async Task<GetDriverQueryResponse> ExecuteAsync(GetDriverQuery request, CancellationToken cancellationToken)

@@ -7,7 +7,7 @@ namespace BuildingLink.DriverManagement.WebApi.Features.Drivers.Update;
 
 [Route(Routes.DriversV1Path)]
 [ApiController]
-public class UpdateDriverEndpoint(IMediator mediator) : WebApiBaseController
+public sealed class UpdateDriverEndpoint(IMediator mediator) : WebApiBaseController
 {
     [HttpPut("{driverId:int}")]
     [ProducesResponseType(StatusCodes.Status200OK)]

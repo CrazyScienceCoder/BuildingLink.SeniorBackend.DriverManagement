@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 
 namespace BuildingLink.DriverManagement.Application.Drivers.Delete;
 
-public class DeleteDriverCommandHandler(IDriverRepository driverRepository, ILogger<DeleteDriverCommandHandler> logger)
+public sealed class DeleteDriverCommandHandler(IDriverRepository driverRepository, ILogger<DeleteDriverCommandHandler> logger)
     : HandlerBase<DeleteDriverCommand, DeleteDriverCommandResponse, DriverResult, Driver>(driverRepository, logger)
 {
     protected override async Task<DeleteDriverCommandResponse> ExecuteAsync(DeleteDriverCommand request, CancellationToken cancellationToken)

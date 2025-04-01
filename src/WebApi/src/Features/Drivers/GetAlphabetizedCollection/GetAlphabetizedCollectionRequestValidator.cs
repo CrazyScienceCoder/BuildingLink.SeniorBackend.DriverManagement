@@ -2,7 +2,7 @@
 
 namespace BuildingLink.DriverManagement.WebApi.Features.Drivers.GetAlphabetizedCollection;
 
-public class GetAlphabetizedCollectionRequestValidator : AbstractValidator<GetAlphabetizedCollectionRequest>
+public sealed class GetAlphabetizedCollectionRequestValidator : AbstractValidator<GetAlphabetizedCollectionRequest>
 {
     public GetAlphabetizedCollectionRequestValidator()
     {

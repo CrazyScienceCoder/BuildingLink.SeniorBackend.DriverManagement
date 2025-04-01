@@ -8,7 +8,7 @@ using Dapper;
 
 namespace BuildingLink.DriverManagement.Infrastructure.Drivers;
 
-public class DriverRepository(IDbConnection connection) : IDriverRepository
+public sealed class DriverRepository(IDbConnection connection) : IDriverRepository
 {
     private const int NumberOfUnacceptableAffectedRows = 0;
 

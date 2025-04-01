@@ -4,7 +4,7 @@ using BuildingLink.DriverManagement.Domain.Types.Validators;
 
 namespace BuildingLink.DriverManagement.Domain.Types;
 
-public record Email
+public sealed record Email
 {
     public const int MaxLength = 150;
 

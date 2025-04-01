@@ -3,7 +3,7 @@ using FluentValidation;
 
 namespace BuildingLink.DriverManagement.WebApi.Features.Drivers.Update;
 
-public class UpdateDriverRequestValidator : AbstractValidator<UpdateDriverRequest>
+public sealed class UpdateDriverRequestValidator : AbstractValidator<UpdateDriverRequest>
 {
     public UpdateDriverRequestValidator()
     {

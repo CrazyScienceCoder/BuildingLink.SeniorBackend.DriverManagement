@@ -2,4 +2,4 @@
 
 namespace BuildingLink.DriverManagement.Application.Drivers.Update;
 
-public class UpdateDriverCommandResponse : Result<DriverResult, UpdateDriverCommandResponse>;
+public sealed class UpdateDriverCommandResponse : Result<DriverResult, UpdateDriverCommandResponse>;

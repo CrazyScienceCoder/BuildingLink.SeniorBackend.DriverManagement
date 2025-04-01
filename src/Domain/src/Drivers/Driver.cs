@@ -2,7 +2,7 @@
 
 namespace BuildingLink.DriverManagement.Domain.Drivers;
 
-public record Driver
+public sealed record Driver
 {
     public required Id Id { get; set; }
 

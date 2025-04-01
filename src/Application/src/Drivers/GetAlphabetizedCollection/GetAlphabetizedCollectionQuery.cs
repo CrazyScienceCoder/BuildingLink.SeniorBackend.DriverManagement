@@ -2,7 +2,7 @@
 
 namespace BuildingLink.DriverManagement.Application.Drivers.GetAlphabetizedCollection;
 
-public class GetAlphabetizedCollectionQuery : IRequest<GetAlphabetizedCollectionQueryResponse>
+public sealed class GetAlphabetizedCollectionQuery : IRequest<GetAlphabetizedCollectionQueryResponse>
 {
     public int? PageSize { get; set; }
 

@@ -7,7 +7,7 @@ namespace BuildingLink.DriverManagement.WebApi.Features.Drivers.Delete;
 
 [Route(Routes.DriversV1Path)]
 [ApiController]
-public class DeleteDriverEndpoint(IMediator mediator) : WebApiBaseController
+public sealed class DeleteDriverEndpoint(IMediator mediator) : WebApiBaseController
 {
     [HttpDelete("{driverId:int}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]

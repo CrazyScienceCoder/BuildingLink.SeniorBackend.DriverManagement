@@ -2,4 +2,4 @@
 
 namespace BuildingLink.DriverManagement.Application.Drivers.Delete;
 
-public class DeleteDriverCommandResponse : Result<DriverResult, DeleteDriverCommandResponse>;
+public sealed class DeleteDriverCommandResponse : Result<DriverResult, DeleteDriverCommandResponse>;

@@ -2,7 +2,7 @@
 
 namespace BuildingLink.DriverManagement.WebApi.Middlewares;
 
-public class RequestLoggingMiddleware(RequestDelegate next, ILogger<RequestLoggingMiddleware> logger)
+public sealed class RequestLoggingMiddleware(RequestDelegate next, ILogger<RequestLoggingMiddleware> logger)
 {
     public async Task Invoke(HttpContext context)
     {

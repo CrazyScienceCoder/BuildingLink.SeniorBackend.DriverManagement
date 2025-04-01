@@ -4,7 +4,7 @@ using BuildingLink.DriverManagement.Domain.Extensions;
 
 namespace BuildingLink.DriverManagement.Domain.Types;
 
-public record Name
+public sealed record Name
 {
     public const int MaxLength = 50;
 

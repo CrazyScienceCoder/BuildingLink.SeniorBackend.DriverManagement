@@ -1,6 +1,6 @@
 ﻿namespace BuildingLink.DriverManagement.Infrastructure.Models;
 
-public class Driver
+public sealed class Driver
 {
     public int Id { get; set; }
 

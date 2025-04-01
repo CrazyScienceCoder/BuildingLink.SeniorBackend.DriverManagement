@@ -2,7 +2,7 @@
 
 namespace BuildingLink.DriverManagement.Application.Drivers.Create;
 
-public class CreateDriverCommand : IRequest<CreateDriverCommandResponse>
+public sealed class CreateDriverCommand : IRequest<CreateDriverCommandResponse>
 {
     public required string FirstName { get; set; }
 

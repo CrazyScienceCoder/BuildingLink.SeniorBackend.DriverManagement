@@ -3,7 +3,7 @@ using FluentValidation;
 
 namespace BuildingLink.DriverManagement.WebApi.Features.Drivers.Create;
 
-public class CreateDriverRequestValidator : AbstractValidator<CreateDriverRequest>
+public sealed class CreateDriverRequestValidator : AbstractValidator<CreateDriverRequest>
 {
     public CreateDriverRequestValidator()
     {

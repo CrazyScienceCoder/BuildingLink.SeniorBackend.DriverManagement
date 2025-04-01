@@ -7,7 +7,7 @@ namespace BuildingLink.DriverManagement.WebApi.Features.Drivers.Get;
 
 [Route(Routes.DriversV1Path)]
 [ApiController]
-public class GetDriverEndpoint(IMediator mediator) : WebApiBaseController
+public sealed class GetDriverEndpoint(IMediator mediator) : WebApiBaseController
 {
     [HttpGet("{driverId:int}")]
     [ProducesResponseType(StatusCodes.Status200OK)]

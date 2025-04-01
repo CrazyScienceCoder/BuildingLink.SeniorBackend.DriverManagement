@@ -2,4 +2,4 @@
 
 namespace BuildingLink.DriverManagement.Application.Drivers.Create;
 
-public class CreateDriverCommandResponse : Result<DriverResult, CreateDriverCommandResponse>;
+public sealed class CreateDriverCommandResponse : Result<DriverResult, CreateDriverCommandResponse>;

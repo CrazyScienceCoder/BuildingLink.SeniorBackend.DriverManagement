@@ -2,7 +2,7 @@
 
 namespace BuildingLink.DriverManagement.Application.Drivers.Update;
 
-public class UpdateDriverCommand : IRequest<UpdateDriverCommandResponse>
+public sealed class UpdateDriverCommand : IRequest<UpdateDriverCommandResponse>
 {
     public required int Id { get; set; }
 

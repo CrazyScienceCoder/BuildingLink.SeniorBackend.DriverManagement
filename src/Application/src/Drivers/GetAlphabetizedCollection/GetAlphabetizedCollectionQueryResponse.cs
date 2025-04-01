@@ -2,4 +2,4 @@
 
 namespace BuildingLink.DriverManagement.Application.Drivers.GetAlphabetizedCollection;
 
-public class GetAlphabetizedCollectionQueryResponse : Result<IReadOnlyList<DriverResult>, GetAlphabetizedCollectionQueryResponse>;
+public sealed class GetAlphabetizedCollectionQueryResponse : Result<IReadOnlyList<DriverResult>, GetAlphabetizedCollectionQueryResponse>;

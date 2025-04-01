@@ -1,6 +1,6 @@
 ﻿namespace BuildingLink.DriverManagement.WebApi.Features.Drivers.GetAlphabetizedCollection;
 
-public class GetAlphabetizedCollectionRequest
+public sealed class GetAlphabetizedCollectionRequest
 {
     public int? PageSize { get; set; }
 

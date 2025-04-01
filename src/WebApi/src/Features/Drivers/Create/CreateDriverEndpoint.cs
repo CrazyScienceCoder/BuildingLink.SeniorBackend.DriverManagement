@@ -6,7 +6,7 @@ namespace BuildingLink.DriverManagement.WebApi.Features.Drivers.Create;
 
 [Route(Routes.DriversV1Path)]
 [ApiController]
-public class CreateDriverEndpoint(IMediator mediator) : WebApiBaseController
+public sealed class CreateDriverEndpoint(IMediator mediator) : WebApiBaseController
 {
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]

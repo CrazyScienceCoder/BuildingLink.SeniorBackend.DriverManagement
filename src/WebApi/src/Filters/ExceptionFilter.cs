@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace BuildingLink.DriverManagement.WebApi.Filters;
 
-public class ExceptionFilter(ILogger<ExceptionFilter> logger) : IExceptionFilter
+public sealed class ExceptionFilter(ILogger<ExceptionFilter> logger) : IExceptionFilter
 {
     public void OnException(ExceptionContext context)
     {

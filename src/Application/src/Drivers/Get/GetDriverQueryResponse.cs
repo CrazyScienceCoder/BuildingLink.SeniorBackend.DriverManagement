@@ -2,4 +2,4 @@
 
 namespace BuildingLink.DriverManagement.Application.Drivers.Get;
 
-public class GetDriverQueryResponse : Result<DriverResult, GetDriverQueryResponse>;
+public sealed class GetDriverQueryResponse : Result<DriverResult, GetDriverQueryResponse>;

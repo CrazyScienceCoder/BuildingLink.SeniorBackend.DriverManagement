@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace BuildingLink.DriverManagement.Application.Drivers.GetAlphabetizedCollection;
 
-public class GetAlphabetizedCollectionQueryHandler(
+public sealed class GetAlphabetizedCollectionQueryHandler(
     IDriverRepository driverRepository,
     ILogger<GetAlphabetizedCollectionQueryHandler> logger)
     : HandlerBase<GetAlphabetizedCollectionQuery, GetAlphabetizedCollectionQueryResponse, IReadOnlyList<DriverResult>,

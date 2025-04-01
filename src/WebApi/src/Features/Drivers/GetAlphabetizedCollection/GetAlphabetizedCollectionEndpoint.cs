@@ -6,7 +6,7 @@ namespace BuildingLink.DriverManagement.WebApi.Features.Drivers.GetAlphabetizedC
 
 [Route(Routes.DriversV1Path)]
 [ApiController]
-public class GetAlphabetizedCollectionEndpoint(IMediator mediator) : WebApiBaseController
+public sealed class GetAlphabetizedCollectionEndpoint(IMediator mediator) : WebApiBaseController
 {
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]

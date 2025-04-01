@@ -4,7 +4,7 @@ using BuildingLink.DriverManagement.Domain.Types.Validators;
 
 namespace BuildingLink.DriverManagement.Domain.Types;
 
-public record PhoneNumber
+public sealed record PhoneNumber
 {
     public string Value { get; init; }
 

@@ -6,7 +6,7 @@ using Microsoft.Extensions.Options;
 
 namespace BuildingLink.DriverManagement.Infrastructure.Migrator;
 
-public class Migrator(IOptions<ConnectionStrings> options, ILogger<Migrator> logger) : IMigrator
+public sealed class Migrator(IOptions<ConnectionStrings> options, ILogger<Migrator> logger) : IMigrator
 {
     private readonly ConnectionStrings _options = options.Value;
 

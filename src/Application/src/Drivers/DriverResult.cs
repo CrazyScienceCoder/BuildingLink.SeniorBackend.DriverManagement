@@ -1,6 +1,6 @@
 ﻿namespace BuildingLink.DriverManagement.Application.Drivers;
 
-public class DriverResult
+public sealed class DriverResult
 {
     public required int Id { get; init; }
 

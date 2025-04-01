@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 
 namespace BuildingLink.DriverManagement.Application.Drivers.Update;
 
-public class UpdateDriverCommandHandler(IDriverRepository driverRepository, ILogger<UpdateDriverCommandHandler> logger)
+public sealed class UpdateDriverCommandHandler(IDriverRepository driverRepository, ILogger<UpdateDriverCommandHandler> logger)
     : HandlerBase<UpdateDriverCommand, UpdateDriverCommandResponse, DriverResult, Driver>(driverRepository, logger)
 {
     protected override async Task<UpdateDriverCommandResponse> ExecuteAsync(UpdateDriverCommand request, CancellationToken cancellationToken)
